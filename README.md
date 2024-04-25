@@ -24,9 +24,9 @@ Why did I choose the value 3700mV? I don't know exactly, It just seems for a bat
 This fix just makes sure 1. The battery/kernel accidentally entered that state, in a "enough charge level" like 20+ present. 2. At least it can escape this state when you charge the battery. If your battery voltage is really low and can not go back to 3700, it is better to just stay in this "rapid_soc_dec" state, reports 1% to you for asking you to charge the battery as soon as possible :)
 
 # About this repository
-This repository is forked from Redmi K30 Pro / POCO F2 Pro's official kernel (https://github.com/MiCode/Xiaomi_Kernel_OpenSource/tree/lmi-q-oss), and I just committed this commit for showing how does the fix works: https://github.com/liyafe1997/Xiaomi-fix-battery-one-percent/commit/83cb4c684d0a483e8c2c39f6ae80be428b855d25.
+This repository is forked from `lmi`(Redmi K30 Pro / POCO F2 Pro)'s official kernel (https://github.com/MiCode/Xiaomi_Kernel_OpenSource/tree/lmi-q-oss), and I just committed this commit for showing how does the fix works: https://github.com/liyafe1997/Xiaomi-fix-battery-one-percent/commit/83cb4c684d0a483e8c2c39f6ae80be428b855d25.
 
-If you are building a third-party kernel you can refer to this commit to fix this problem. Highly recommend you do that for your kernel to avoid this annoying 1% battery bug for the end-users.
+If you are building a third-party kernel for these Xiaomi devices(not only `lmi`) you can refer to this commit to fix this problem. Highly recommend you do that for your kernel to avoid this annoying 1% battery bug for the end-users.
 
 # 简体中文
 写上面的累了，有空再写吧，或者哪位老哥帮写下，可以提交个PR，万分感谢！
