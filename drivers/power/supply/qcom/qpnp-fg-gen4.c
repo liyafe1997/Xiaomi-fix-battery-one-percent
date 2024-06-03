@@ -401,6 +401,7 @@ static bool fg_esr_fast_cal_en;
 
 static int fg_gen4_validate_soc_scale_mode(struct fg_gen4_chip *chip);
 static int fg_gen4_esr_fast_calib_config(struct fg_gen4_chip *chip, bool en);
+static int fg_gen4_rapid_soc_config(struct fg_gen4_chip *chip, bool en);
 
 static struct fg_sram_param pm8150b_v1_sram_params[] = {
 	PARAM(BATT_SOC, BATT_SOC_WORD, BATT_SOC_OFFSET, 4, 1, 1, 0, NULL,
